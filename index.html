@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaseN Conversion Tool</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="container">
+        <h2>BaseN Conversion Tool</h2>
+        <div class="field-container">
+            <div>
+                <label for="binaryInput">Binary</label>
+                <input type="text" id="binaryInput" placeholder="Binary (0/1)" oninput="convertInput('binary')">
+            </div>
+            <div>
+                <label for="decimalInput">Decimal</label>
+                <input type="text" id="decimalInput" placeholder="Decimal" oninput="convertInput('decimal')">
+            </div>
+            <div>
+                <label for="octalInput">Octal</label>
+                <input type="text" id="octalInput" placeholder="Octal" oninput="convertInput('octal')">
+            </div>
+            <div>
+                <label for="hexInput">Hexadecimal</label>
+                <input type="text" id="hexInput" placeholder="Hexadecimal" oninput="convertInput('hex')">
+            </div>
+        </div>
+        <button onclick="clearFields()">Clear All</button>
+        <div class="output" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
